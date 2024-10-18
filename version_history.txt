@@ -1,0 +1,8 @@
+16.10.2024
+
+Eren CULHACI:
+- Added base codes for backend and node routes for the functions.
+- Created a simple front-end for displaying the map and deleting all nodes on the map.
+- Node creation and deletion features on the displayed map. 
+- Added mesh network visualization.
+

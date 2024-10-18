@@ -44,11 +44,20 @@ body {
 }
 
 .delete-button {
-    background-color: #dc3545;
+    display: inline-block;
+    background-color: #ce2929;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .delete-button:hover {
-    background-color: #c82333;
+    background-color: #f01d32;
 }
 
 /* Pop-up Button */
@@ -85,4 +94,45 @@ h3 {
 .info-container {
     text-align: center;
     margin: 20px;
+}
+
+/* Select Input Style */
+.selectinput {
+    display: inline-block;
+    position: relative;
+    width: 200px; 
+}
+
+.selectinput select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    appearance: none; 
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="%23000" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 5l7 7 7-7H1.5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.selectinput select:focus {
+    border-color: #007bff; 
+    outline: none; 
+}
+
+.selectinput select:hover {
+    border-color: #007bff;
+}
+
+.label_earthquake {
+    font-size: 16px; 
+    font-weight: bold;
+    color: #333; 
+    margin-right: 10px;
+    display: inline-block; 
+    vertical-align: middle; 
 }
