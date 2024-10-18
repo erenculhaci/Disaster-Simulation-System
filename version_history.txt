@@ -1,8 +1,13 @@
 16.10.2024
-
-Eren CULHACI:
 - Added base codes for backend and node routes for the functions.
 - Created a simple front-end for displaying the map and deleting all nodes on the map.
 - Node creation and deletion features on the displayed map. 
 - Added mesh network visualization.
 
+17.10.2024
+- Created the getNodeDistrict function with estimated max-min latitude and longtitude values of each district to create a prototype function
+
+18.10.2024
+- Added geographical location data.
+- Updated the function getNodeDistrict to determine the districts of the nodes by checking if the shape created by the location data encapsulates that node in a specific district.
+- Created an earthquake simulation with different intensities that deletes some of the nodes by the chances of destruction of each district in different intensities.
