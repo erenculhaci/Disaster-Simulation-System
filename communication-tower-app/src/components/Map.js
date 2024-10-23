@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'; 
-import { MapContainer, TileLayer, Marker, Popup, useMapEvents, Polyline } from 'react-leaflet'; 
+import React, { useEffect, useState, useMemo } from 'react'; 
+import { MapContainer, TileLayer, Marker, Popup, useMapEvents, Polyline, Circle } from 'react-leaflet'; 
 import 'leaflet/dist/leaflet.css'; 
 import '../styles.css'; 
 import { useDispatch, useSelector } from 'react-redux'; 
@@ -77,6 +77,8 @@ const MapComponent = () => {
     const dispatch = useDispatch(); 
 
     const [earthquakeIntensity, setEarthquakeIntensity] = useState(7.5);
+    const [showMesh, setShowMesh] = useState(false);
+    const [towerLocations, setTowerLocations] = useState([]);
 
     useEffect(() => { 
         const fetchNodes = async () => { 
@@ -169,39 +171,62 @@ const MapComponent = () => {
     };
     
 
+    const toggleMeshVisibility = () => {
+        setShowMesh(prevShow => !prevShow);
+    };
+
+    const getMeshConnections = () => {
+        const connections = [];
+        for (let i = 0; i < nodes.length; i++) {
+            for (let j = i + 1; j < nodes.length; j++) {
+                connections.push([[nodes[i].lat, nodes[i].lng], [nodes[j].lat, nodes[j].lng]]);
+            }
+        }
+        return connections;
+    };
+
+    const meshConnections = useMemo(() => getMeshConnections(), [nodes]);
+
+    const loadTowerLocations = async () => {
+        try {
+            // Fetch the tower locations from the JSON file
+            const response = await fetch('/tower_locations.json');
+            if (!response.ok) {
+                throw new Error('Failed to load tower locations');
+            }
+            const towerLocations = await response.json();
     
-    const getMeshConnections = () => { 
-        const connections = []; 
-        nodes.forEach((nodeA, indexA) => { 
-            nodes.forEach((nodeB, indexB) => { 
-                if (indexA !== indexB) { 
-                    connections.push([[nodeA.lat, nodeA.lng], [nodeB.lat, nodeB.lng]]); 
-                } 
-            }); 
-        }); 
-        return connections; 
-    }; 
+            // Loop through each tower location and add it to the database
+            towerLocations.forEach(async (tower) => {
+                const { Latitude, Longitude } = tower;
+                await handleAddNode(Latitude, Longitude);
+            });
+            
+            console.log('All tower locations added to the database');
+        } catch (error) {
+            console.error('Error loading tower locations:', error);
+        }
+    };
+    
 
-    const MapEventHandler = () => { 
-        useMapEvents({ 
-            click: (event) => { 
-                const { lat, lng } = event.latlng; 
-                handleAddNode(lat, lng); 
-            }, 
-        }); 
-        return null; 
-    }; 
+    const MapEventHandler = () => {
+        useMapEvents({
+            click: (event) => {
+                const { lat, lng } = event.latlng;
+                handleAddNode(lat, lng);
+            },
+        });
+        return null;
+    };
 
-    const meshConnections = getMeshConnections(); 
-
-    return ( 
-        <div className="container"> 
-            <div className="header"> 
-                <h1>Communication Tower Network</h1> 
-            </div> 
+        return (
+        <div className="container">
+            <div className="header">
+                <h1>Communication Tower Network</h1>
+            </div>
 
             <div className="button-container">
-                <label className = "label_earthquake" htmlFor="earthquake-intensity">Earthquake Intensity: </label>
+                <label className="label_earthquake" htmlFor="earthquake-intensity">Earthquake Intensity: </label>
                 <div className="selectinput">
                     <select
                         id="earthquake-intensity"
@@ -216,49 +241,61 @@ const MapComponent = () => {
                         ))}
                     </select>
                 </div>
-               
+
                 <button className="button" onClick={simulateEarthquake}>Simulate Earthquake</button>
                 <button className="delete-button" onClick={handleDeleteAllNodes}>Delete All Nodes</button>
-            </div> 
+                <button className="button" onClick={loadTowerLocations}>Load Tower Locations</button>
+                <button className="button" onClick={toggleMeshVisibility}>
+                    {showMesh ? 'Hide Mesh Network' : 'Show Mesh Network'}
+                </button>
+            </div>
 
-            <div className="map-container"> 
-                <MapContainer center={[41.0082, 28.9784]} zoom={12} style={{ height: "100%" }}> 
-                    <TileLayer 
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
-                        attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors" 
-                    /> 
-                    <MapEventHandler /> 
-                    {/* Render mesh connections */} 
-                    {meshConnections.map((connection, index) => ( 
-                        <Polyline 
-                            key={index} 
-                            positions={connection} 
-                            color="blue" 
-                            opacity={0.3} 
-                            weight={1.5} 
-                            dashArray="4" 
-                        /> 
-                    ))} 
-                    {/* Render nodes */} 
-                    {nodes.map((node) => ( 
-                        <Marker key={node.id} position={[node.lat, node.lng]} icon={customIcon}> 
-                            <Popup>
-                                <span>Node ID: {node.id}</span>
-                                <br />
-                                <span>Latitude: {node.lat}</span>
-                                <br />
-                                <span>Longitude: {node.lng}</span>
-                                <br />
-                                <br />
-                                <span>District: {getNodeDistrict(node)}</span> 
-                                <button className="popup-button" onClick={() => handleDeleteNode(node.id)}>Delete Node</button> 
-                            </Popup> 
-                        </Marker> 
-                    ))} 
-                </MapContainer> 
-            </div> 
-        </div> 
-    ); 
-}; 
+            <div className="map-container">
+                <MapContainer center={[41.0082, 28.9784]} zoom={12} style={{ height: "100%" }}>
+                    <TileLayer
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
+                    />
+                    <MapEventHandler />
+                    
+                    {/* Conditionally render the mesh connections */}
+                    {showMesh && meshConnections.map((connection, index) => (
+                        <Polyline
+                            key={index}
+                            positions={connection}
+                            color="blue"
+                            opacity={0.3}
+                            weight={1.5}
+                            dashArray="4"
+                        />
+                    ))}
+                    
+                    {nodes.map((node) => (
+                        <React.Fragment key={node.id}>
+                            <Marker position={[node.lat, node.lng]} icon={customIcon}>
+                                <Popup>
+                                    <span>Node ID: {node.id}</span>
+                                    <br />
+                                    <span>Latitude: {node.lat}</span>
+                                    <br />
+                                    <span>Longitude: {node.lng}</span>
+                                    <br />
+                                    <br />
+                                    <span>District: {getNodeDistrict(node)}</span>
+                                    <button className="popup-button" onClick={() => handleDeleteNode(node.id)}>Delete Node</button>
+                                </Popup>
+                            </Marker>
+                            <Circle center={[node.lat, node.lng]}
+                                radius={7500}
+                                color="red"
+                                fillOpacity={0.07}
+                                weight={1} />
+                        </React.Fragment>
+                    ))}
+                </MapContainer>
+            </div>
+        </div>
+    );
+};
 
 export default MapComponent; 
