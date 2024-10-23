@@ -27,7 +27,7 @@ const intensityDestructionRates = {
     8.5: 3.5,
     9: 4,
     9.5: 12,
-    10: 20
+    10: 36
 };
 
 const districtDestructionRates = {

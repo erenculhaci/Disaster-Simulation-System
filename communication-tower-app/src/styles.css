@@ -1,11 +1,14 @@
 /* General Layout */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    color: #444;
 }
 
+/* Container and Layout */
 .container {
     padding: 20px;
     max-width: 1200px;
@@ -14,81 +17,81 @@ body {
 
 .header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .map-container {
     position: relative;
-    height: calc(100vh - 100px);
-    border-radius: 10px;
+    height: calc(100vh - 150px);
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Buttons */
-.button {
+.button, .delete-button, .popup-button {
     display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     margin: 5px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Primary Button */
+.button {
+    background-color: #1a73e8;
+    color: white;
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #0f5bb7;
 }
 
+/* Danger Button */
 .delete-button {
-    display: inline-block;
-    background-color: #ce2929;
+    background-color: #e63946;
     color: white;
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
 }
 
 .delete-button:hover {
-    background-color: #f01d32;
+    background-color: #c41626;
 }
 
-/* Pop-up Button */
+/* Success Button */
 .popup-button {
-    padding: 5px 10px;
-    background-color: #28a745;
+    background-color: #2dce89;
     color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .popup-button:hover {
-    background-color: #218838;
+    background-color: #1ca66a;
 }
 
 /* Header */
 h1 {
     color: #333;
-    margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 h3 {
     color: #666;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
-/* Container and Layout */
+/* Button Container */
 .button-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .info-container {
@@ -100,39 +103,53 @@ h3 {
 .selectinput {
     display: inline-block;
     position: relative;
-    width: 200px; 
+    width: 250px;
 }
 
 .selectinput select {
     width: 100%;
-    padding: 10px 15px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
     background-color: #fff;
     color: #333;
     font-size: 16px;
-    appearance: none; 
+    appearance: none;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="%23000" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 5l7 7 7-7H1.5z"/></svg>');
     background-repeat: no-repeat;
-    background-position: right 10px center;
+    background-position: right 12px center;
     background-size: 15px;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.selectinput select:focus {
-    border-color: #007bff; 
-    outline: none; 
+.selectinput select:hover, .selectinput select:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 8px rgba(26, 115, 232, 0.2);
+    outline: none;
 }
 
-.selectinput select:hover {
-    border-color: #007bff;
-}
-
+/* Labels */
 .label_earthquake {
-    font-size: 16px; 
+    font-size: 16px;
     font-weight: bold;
-    color: #333; 
-    margin-right: 10px;
-    display: inline-block; 
-    vertical-align: middle; 
+    color: #444;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .button, .delete-button, .popup-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .selectinput {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
 }

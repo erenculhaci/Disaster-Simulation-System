@@ -35,3 +35,5 @@ result_df = result_df.drop_duplicates(subset='District')
 
 print("Final Tower Distribution:")
 print(result_df[['District', 'Towers Inside']].to_string(index=False))
+
+result_df.to_csv('./output.csv', index=False)
