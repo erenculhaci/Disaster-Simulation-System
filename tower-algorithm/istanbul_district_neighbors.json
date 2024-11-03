@@ -1,0 +1,364 @@
+[
+    {
+        "District": "Adalar",
+        "Neighbors": []
+    },
+    {
+        "District": "Şile",
+        "Neighbors": [
+            "Pendik",
+            "Çekmeköy",
+            "Beykoz"
+        ]
+    },
+    {
+        "District": "Silivri",
+        "Neighbors": [
+            "Büyükçekmece",
+            "Çatalca"
+        ]
+    },
+    {
+        "District": "Büyükçekmece",
+        "Neighbors": [
+            "Silivri",
+            "Çatalca",
+            "Arnavutköy",
+            "Beylikdüzü",
+            "Esenyurt"
+        ]
+    },
+    {
+        "District": "Çatalca",
+        "Neighbors": [
+            "Silivri",
+            "Büyükçekmece",
+            "Arnavutköy"
+        ]
+    },
+    {
+        "District": "Tuzla",
+        "Neighbors": [
+            "Pendik"
+        ]
+    },
+    {
+        "District": "Pendik",
+        "Neighbors": [
+            "Şile",
+            "Tuzla",
+            "Sultanbeyli",
+            "Kartal",
+            "Sancaktepe",
+            "Çekmeköy"
+        ]
+    },
+    {
+        "District": "Sultanbeyli",
+        "Neighbors": [
+            "Pendik",
+            "Kartal",
+            "Sancaktepe"
+        ]
+    },
+    {
+        "District": "Kartal",
+        "Neighbors": [
+            "Pendik",
+            "Sultanbeyli",
+            "Sancaktepe",
+            "Maltepe"
+        ]
+    },
+    {
+        "District": "Sancaktepe",
+        "Neighbors": [
+            "Pendik",
+            "Sultanbeyli",
+            "Kartal",
+            "Çekmeköy",
+            "Maltepe",
+            "Ataşehir",
+            "Ümraniye"
+        ]
+    },
+    {
+        "District": "Çekmeköy",
+        "Neighbors": [
+            "Şile",
+            "Pendik",
+            "Sancaktepe",
+            "Ümraniye",
+            "Beykoz"
+        ]
+    },
+    {
+        "District": "Maltepe",
+        "Neighbors": [
+            "Kartal",
+            "Sancaktepe",
+            "Kadıköy",
+            "Ataşehir"
+        ]
+    },
+    {
+        "District": "Kadıköy",
+        "Neighbors": [
+            "Maltepe",
+            "Ataşehir",
+            "Üsküdar"
+        ]
+    },
+    {
+        "District": "Ataşehir",
+        "Neighbors": [
+            "Sancaktepe",
+            "Maltepe",
+            "Kadıköy",
+            "Üsküdar",
+            "Ümraniye"
+        ]
+    },
+    {
+        "District": "Üsküdar",
+        "Neighbors": [
+            "Kadıköy",
+            "Ataşehir",
+            "Ümraniye",
+            "Beykoz"
+        ]
+    },
+    {
+        "District": "Ümraniye",
+        "Neighbors": [
+            "Sancaktepe",
+            "Çekmeköy",
+            "Ataşehir",
+            "Üsküdar",
+            "Beykoz"
+        ]
+    },
+    {
+        "District": "Beykoz",
+        "Neighbors": [
+            "Şile",
+            "Çekmeköy",
+            "Üsküdar",
+            "Ümraniye"
+        ]
+    },
+    {
+        "District": "Beyoğlu",
+        "Neighbors": [
+            "Beşiktaş",
+            "Kağıthane",
+            "Şişli",
+            "Eyüpsultan"
+        ]
+    },
+    {
+        "District": "Beşiktaş",
+        "Neighbors": [
+            "Beyoğlu",
+            "Kağıthane",
+            "Sarıyer",
+            "Şişli"
+        ]
+    },
+    {
+        "District": "Kağıthane",
+        "Neighbors": [
+            "Beyoğlu",
+            "Beşiktaş",
+            "Sarıyer",
+            "Şişli",
+            "Eyüpsultan"
+        ]
+    },
+    {
+        "District": "Sarıyer",
+        "Neighbors": [
+            "Beşiktaş",
+            "Kağıthane",
+            "Eyüpsultan"
+        ]
+    },
+    {
+        "District": "Şişli",
+        "Neighbors": [
+            "Beyoğlu",
+            "Beşiktaş",
+            "Kağıthane"
+        ]
+    },
+    {
+        "District": "Arnavutköy",
+        "Neighbors": [
+            "Büyükçekmece",
+            "Çatalca",
+            "Başakşehir",
+            "Esenyurt",
+            "Eyüpsultan"
+        ]
+    },
+    {
+        "District": "Avcılar",
+        "Neighbors": [
+            "Başakşehir",
+            "Beylikdüzü",
+            "Esenyurt",
+            "Küçükçekmece"
+        ]
+    },
+    {
+        "District": "Bahçelievler",
+        "Neighbors": [
+            "Bakırköy",
+            "Bağcılar",
+            "Güngören",
+            "Küçükçekmece"
+        ]
+    },
+    {
+        "District": "Bakırköy",
+        "Neighbors": [
+            "Bahçelievler",
+            "Güngören",
+            "Zeytinburnu",
+            "Küçükçekmece"
+        ]
+    },
+    {
+        "District": "Bayrampaşa",
+        "Neighbors": [
+            "Esenler",
+            "Eyüpsultan",
+            "Gaziosmanpaşa",
+            "Zeytinburnu"
+        ]
+    },
+    {
+        "District": "Bağcılar",
+        "Neighbors": [
+            "Bahçelievler",
+            "Başakşehir",
+            "Esenler",
+            "Güngören",
+            "Küçükçekmece"
+        ]
+    },
+    {
+        "District": "Başakşehir",
+        "Neighbors": [
+            "Arnavutköy",
+            "Avcılar",
+            "Bağcılar",
+            "Esenler",
+            "Esenyurt",
+            "Eyüpsultan",
+            "Sultangazi",
+            "Küçükçekmece"
+        ]
+    },
+    {
+        "District": "Beylikdüzü",
+        "Neighbors": [
+            "Büyükçekmece",
+            "Avcılar",
+            "Esenyurt"
+        ]
+    },
+    {
+        "District": "Esenler",
+        "Neighbors": [
+            "Bayrampaşa",
+            "Bağcılar",
+            "Başakşehir",
+            "Gaziosmanpaşa",
+            "Güngören",
+            "Sultangazi",
+            "Zeytinburnu"
+        ]
+    },
+    {
+        "District": "Esenyurt",
+        "Neighbors": [
+            "Büyükçekmece",
+            "Arnavutköy",
+            "Avcılar",
+            "Başakşehir",
+            "Beylikdüzü"
+        ]
+    },
+    {
+        "District": "Eyüpsultan",
+        "Neighbors": [
+            "Beyoğlu",
+            "Kağıthane",
+            "Sarıyer",
+            "Arnavutköy",
+            "Bayrampaşa",
+            "Başakşehir",
+            "Fatih",
+            "Gaziosmanpaşa",
+            "Sultangazi",
+            "Zeytinburnu"
+        ]
+    },
+    {
+        "District": "Fatih",
+        "Neighbors": [
+            "Eyüpsultan",
+            "Zeytinburnu"
+        ]
+    },
+    {
+        "District": "Gaziosmanpaşa",
+        "Neighbors": [
+            "Bayrampaşa",
+            "Esenler",
+            "Eyüpsultan",
+            "Sultangazi"
+        ]
+    },
+    {
+        "District": "Güngören",
+        "Neighbors": [
+            "Bahçelievler",
+            "Bakırköy",
+            "Bağcılar",
+            "Esenler",
+            "Zeytinburnu"
+        ]
+    },
+    {
+        "District": "Sultangazi",
+        "Neighbors": [
+            "Başakşehir",
+            "Esenler",
+            "Eyüpsultan",
+            "Gaziosmanpaşa"
+        ]
+    },
+    {
+        "District": "Zeytinburnu",
+        "Neighbors": [
+            "Bakırköy",
+            "Bayrampaşa",
+            "Esenler",
+            "Eyüpsultan",
+            "Fatih",
+            "Güngören"
+        ]
+    },
+    {
+        "District": "Küçükçekmece",
+        "Neighbors": [
+            "Avcılar",
+            "Bahçelievler",
+            "Bakırköy",
+            "Bağcılar",
+            "Başakşehir"
+        ]
+    }
+]
