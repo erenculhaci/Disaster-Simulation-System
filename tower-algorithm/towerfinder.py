@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import json
 # Load the merged district data with destruction rate and population from data.csv
 file_path = './data.csv'
 df = pd.read_csv(file_path)
@@ -105,8 +106,17 @@ def calculate_variables(df, distance_df):
     #print(df[['District', 'var1', 'var2', 'var3', 'var4', 'var5', 'var6', 'var7']].sort_values(by='var7', ascending=False).head(10))
     
     return df
+# Load neighbors data from JSON file
+with open('istanbul_district_neighbors.json', 'r', encoding='utf-8') as f:
+    neighbors_data = json.load(f)
 
-# Distribute towers based on the calculated variables
+# Function to get neighbors of a district
+def get_neighbors(district_name):
+    for district in neighbors_data:
+        if district['District'] == district_name:
+            return district['Neighbors']
+    return []
+
 def distribute_towers(df, num_towers, distance_df):
     df = calculate_variables(df, distance_df)
     
@@ -117,6 +127,22 @@ def distribute_towers(df, num_towers, distance_df):
         # Allocate a tower to this district
         df.loc[highest_priority_index, 'Towers Inside'] += 1
         num_towers -= 1
+        
+        # Get the name of the highest priority district
+        district_name = df.loc[highest_priority_index, 'District']
+        
+        # Get neighbors of this district
+        neighbors = get_neighbors(district_name)
+        
+        # Check if there are any neighbors
+        if neighbors:
+            # Calculate `var7` for each neighbor and select the one with the highest `var7`
+            neighbor_var7_values = df[df['District'].isin(neighbors)][['District', 'var7']]
+            neighbor_with_highest_var7 = neighbor_var7_values.sort_values(by='var7', ascending=False).iloc[0]['District']
+            
+            # Allocate a tower to the highest priority neighboring district
+            df.loc[df['District'] == neighbor_with_highest_var7, 'Towers Inside'] += 1
+            num_towers -= 1
         
         # Recalculate variables for dynamic allocation after each tower is added
         df = calculate_variables(df, distance_df)
