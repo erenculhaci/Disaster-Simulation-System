@@ -1,11 +1,12 @@
 /* General Layout */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #d2f1ff;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #444;
+    transition: background-color 0.3s ease-in-out;
 }
 
 /* Container and Layout */
@@ -13,34 +14,59 @@ body {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background: rgb(233, 255, 255);
+    border-radius: 20px;
+    overflow: hidden;
 }
 
+/* Header */
 .header {
     text-align: center;
-    margin-bottom: 30px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #4a90e2, #50c3ba);
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #eee;
+    margin-top: 5px;
+}
+
+/* Map Container */
 .map-container {
     position: relative;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 180px);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Buttons */
-.button, .delete-button, .popup-button {
+.button, .load-button, .delete-button, .popup-button {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 14px 28px;
     margin: 5px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 1em;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
@@ -51,7 +77,18 @@ body {
 }
 
 .button:hover {
-    background-color: #0f5bb7;
+    background-color: #155bb5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.load-button {
+    background-color: #25c548;
+    color: white;
+}
+
+.load-button:hover {
+    background-color: #239432;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Danger Button */
@@ -61,7 +98,8 @@ body {
 }
 
 .delete-button:hover {
-    background-color: #c41626;
+    background-color: #b12d38;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Success Button */
@@ -72,38 +110,33 @@ body {
 
 .popup-button:hover {
     background-color: #1ca66a;
-}
-
-/* Header */
-h1 {
-    color: #333;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-h3 {
-    color: #666;
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Button Container */
 .button-container {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 30px auto;
 }
 
+/* Info Container */
 .info-container {
     text-align: center;
     margin: 20px;
+    padding: 15px;
+    background: #eef3f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Select Input Style */
 .selectinput {
-    display: inline-block;
+    display: block;
     position: relative;
-    width: 250px;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 .selectinput select {
@@ -112,12 +145,12 @@ h3 {
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #fff;
-    color: #333;
-    font-size: 16px;
+    color: #444;
+    font-size: 1em;
     appearance: none;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="%23000" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 5l7 7 7-7H1.5z"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="%23444" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 5l7 7 7-7H1.5z"/></svg>');
     background-repeat: no-repeat;
-    background-position: right 12px center;
+    background-position: right 15px center;
     background-size: 15px;
     transition: all 0.3s ease;
 }
@@ -128,7 +161,7 @@ h3 {
     outline: none;
 }
 
-/* Labels */
+/* Label Style */
 .label_earthquake {
     font-size: 16px;
     font-weight: bold;
@@ -138,11 +171,11 @@ h3 {
     vertical-align: middle;
 }
 
-/* Responsiveness */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .button, .delete-button, .popup-button {
         padding: 10px 20px;
-        font-size: 14px;
+        font-size: 0.9em;
     }
 
     .selectinput {
@@ -152,4 +185,50 @@ h3 {
     h1 {
         font-size: 2em;
     }
+
+    .container {
+        padding: 10px;
+    }
+
+    .map-container {
+        height: 60vh;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes buttonPop {
+    0% { transform: scale(0.95); }
+    70% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-5px); }
+    20% { transform: translateX(5px); }
+    30% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    60% { transform: translateX(5px); }
+    70% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    90% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+.button, .load-button, .delete-button, .popup-button {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.button:hover, .load-button:hover, .delete-button:hover, .popup-button:hover {
+    animation: buttonPop 0.3s ease-out;
 }

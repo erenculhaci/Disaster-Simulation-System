@@ -116,6 +116,9 @@ const MapComponent = () => {
     }; 
 
     const simulateEarthquake = async () => {
+        const container = document.querySelector('.container');
+        container.classList.add('shake');
+
         const destructionProbabilities = {};
 
         for (const district in districtDestructionRates) {
@@ -132,6 +135,10 @@ const MapComponent = () => {
         for (const node of nodesToDelete) {
             await handleDeleteNode(node.id);
         }
+
+        setTimeout(() => {
+            container.classList.remove('shake');
+        }, 500);
     };
 
     const getNodeDistrict = (node) => {
@@ -244,7 +251,7 @@ const MapComponent = () => {
 
                 <button className="button" onClick={simulateEarthquake}>Simulate Earthquake</button>
                 <button className="delete-button" onClick={handleDeleteAllNodes}>Delete All Nodes</button>
-                <button className="button" onClick={loadTowerLocations}>Load Tower Locations</button>
+                <button className="load-button" onClick={loadTowerLocations}>Load Tower Locations</button>
                 <button className="button" onClick={toggleMeshVisibility}>
                     {showMesh ? 'Hide Mesh Network' : 'Show Mesh Network'}
                 </button>
