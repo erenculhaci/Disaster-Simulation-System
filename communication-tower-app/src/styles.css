@@ -1,4 +1,3 @@
-/* General Layout */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #d2f1ff;
@@ -9,7 +8,6 @@ body {
     transition: background-color 0.3s ease-in-out;
 }
 
-/* Container and Layout */
 .container {
     padding: 20px;
     max-width: 1200px;
@@ -20,7 +18,6 @@ body {
     overflow: hidden;
 }
 
-/* Header */
 .header {
     text-align: center;
     padding: 40px 20px;
@@ -45,7 +42,6 @@ h3 {
     margin-top: 5px;
 }
 
-/* Map Container */
 .map-container {
     position: relative;
     height: calc(100vh - 180px);
@@ -54,8 +50,7 @@ h3 {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Buttons */
-.button, .load-button, .delete-button, .popup-button {
+.button, .toggle-button, .load-button, .delete-button, .popup-button {
     display: inline-block;
     padding: 14px 28px;
     margin: 5px;
@@ -70,7 +65,6 @@ h3 {
     transition: all 0.3s ease;
 }
 
-/* Primary Button */
 .button {
     background-color: #1a73e8;
     color: white;
@@ -78,6 +72,16 @@ h3 {
 
 .button:hover {
     background-color: #155bb5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-button {
+    background-color: #a258b4;
+    color: white;
+}
+
+.toggle-button:hover {
+    background-color: #5e2d5a;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -91,7 +95,6 @@ h3 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Danger Button */
 .delete-button {
     background-color: #e63946;
     color: white;
@@ -102,7 +105,6 @@ h3 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Success Button */
 .popup-button {
     background-color: #2dce89;
     color: white;
@@ -114,13 +116,11 @@ h3 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Button Container */
 .button-container {
     text-align: center;
     margin: 30px auto;
 }
 
-/* Info Container */
 .info-container {
     text-align: center;
     margin: 20px;
@@ -130,7 +130,6 @@ h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Select Input Style */
 .selectinput {
     display: block;
     position: relative;
@@ -161,7 +160,6 @@ h3 {
     outline: none;
 }
 
-/* Label Style */
 .label_earthquake {
     font-size: 16px;
     font-weight: bold;
@@ -171,9 +169,8 @@ h3 {
     vertical-align: middle;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .button, .delete-button, .popup-button {
+    .button,  .toggle-button, .load-button, .delete-button, .popup-button {
         padding: 10px 20px;
         font-size: 0.9em;
     }
@@ -195,7 +192,6 @@ h3 {
     }
 }
 
-/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -225,10 +221,10 @@ h3 {
     animation: shake 0.5s ease-in-out;
 }
 
-.button, .load-button, .delete-button, .popup-button {
+.button,  .toggle-button, .load-button, .delete-button, .popup-button {
     animation: fadeIn 0.5s ease-in-out;
 }
 
-.button:hover, .load-button:hover, .delete-button:hover, .popup-button:hover {
+.button:hover,  .toggle-button:hover, .load-button:hover, .delete-button:hover, .popup-button:hover {
     animation: buttonPop 0.3s ease-out;
 }

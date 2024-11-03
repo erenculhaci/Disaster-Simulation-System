@@ -5,13 +5,13 @@ const nodeSlice = createSlice({
     initialState: [],
     reducers: {
         setNodes: (state, action) => {
-            return action.payload; // Set the nodes from the database
+            return action.payload; 
         },
         addNode: (state, action) => {
-            state.push(action.payload); // Add a node
+            state.push(action.payload); 
         },
         deleteNode: (state, action) => {
-            return state.filter((node) => node.id !== action.payload); // Delete node by id
+            return state.filter((node) => node.id !== action.payload);
         },
     },
 });

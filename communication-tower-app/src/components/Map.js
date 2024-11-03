@@ -131,7 +131,6 @@ const MapComponent = () => {
             return Math.random() < destructionProbabilities[nodeDistrict];
         });
 
-        // Delete nodes
         for (const node of nodesToDelete) {
             await handleDeleteNode(node.id);
         }
@@ -142,15 +141,13 @@ const MapComponent = () => {
     };
 
     const getNodeDistrict = (node) => {
-        const point = turf.point([node.lng, node.lat]); // Create a point from the node's coordinates.
+        const point = turf.point([node.lng, node.lat]);
      
         for (const district of districts_json.features) {
             const coordinates = district.geometry.coordinates;
     
-            // Check if the coordinates are valid for a polygon
             if (!Array.isArray(coordinates) || coordinates.length === 0) continue;
     
-            // Handle MultiPolygon
             if (district.geometry.type === "MultiPolygon") {
                 for (const polygon of coordinates) {
                     if (polygon.length >= 1 && polygon[0].length >= 4) {
@@ -162,7 +159,6 @@ const MapComponent = () => {
                 }
             }
     
-            // Handle Polygon
             if (district.geometry.type === "Polygon") {
                 const polygon = coordinates;
                 if (polygon.length >= 1 && polygon[0].length >= 4) {
@@ -174,7 +170,7 @@ const MapComponent = () => {
             }
         }
      
-        return 'Unknown'; // Return 'Unknown' if no matching district is found.
+        return 'Unknown';
     };
     
 
@@ -196,14 +192,11 @@ const MapComponent = () => {
 
     const loadTowerLocations = async () => {
         try {
-            // Fetch the tower locations from the JSON file
             const response = await fetch('/tower_locations.json');
             if (!response.ok) {
                 throw new Error('Failed to load tower locations');
             }
             const towerLocations = await response.json();
-    
-            // Loop through each tower location and add it to the database
             towerLocations.forEach(async (tower) => {
                 const { Latitude, Longitude } = tower;
                 await handleAddNode(Latitude, Longitude);
@@ -252,7 +245,7 @@ const MapComponent = () => {
                 <button className="button" onClick={simulateEarthquake}>Simulate Earthquake</button>
                 <button className="delete-button" onClick={handleDeleteAllNodes}>Delete All Nodes</button>
                 <button className="load-button" onClick={loadTowerLocations}>Load Tower Locations</button>
-                <button className="button" onClick={toggleMeshVisibility}>
+                <button className="toggle-button" onClick={toggleMeshVisibility}>
                     {showMesh ? 'Hide Mesh Network' : 'Show Mesh Network'}
                 </button>
             </div>
@@ -264,8 +257,6 @@ const MapComponent = () => {
                         attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
                     />
                     <MapEventHandler />
-                    
-                    {/* Conditionally render the mesh connections */}
                     {showMesh && meshConnections.map((connection, index) => (
                         <Polyline
                             key={index}
