@@ -1,563 +1,528 @@
 [
     {
         "District": "Gaziosmanpaşa",
-        "Latitude": 41.079771884669086,
-        "Longitude": 28.8866467410288
+        "Latitude": 41.06249733308386,
+        "Longitude": 28.91000545200833
     },
     {
         "District": "Gaziosmanpaşa",
-        "Latitude": 41.08633561633083,
-        "Longitude": 28.89668239699361
+        "Latitude": 41.07571611299406,
+        "Longitude": 28.891786953207582
     },
     {
         "District": "Gaziosmanpaşa",
-        "Latitude": 41.05705484362014,
-        "Longitude": 28.90892411172581
+        "Latitude": 41.08975094188758,
+        "Longitude": 28.91695012869079
     },
     {
         "District": "Gaziosmanpaşa",
-        "Latitude": 41.0862066921014,
-        "Longitude": 28.913030083456558
+        "Latitude": 41.0645655492616,
+        "Longitude": 28.918478007727842
     },
     {
         "District": "Gaziosmanpaşa",
-        "Latitude": 41.06267970758596,
-        "Longitude": 28.90571059511385
+        "Latitude": 41.08852585156534,
+        "Longitude": 28.905189333729783
     },
     {
         "District": "Gaziosmanpaşa",
-        "Latitude": 41.05954363254749,
-        "Longitude": 28.931672392833615
+        "Latitude": 41.0630616638,
+        "Longitude": 28.90369552228673
     },
     {
         "District": "Gaziosmanpaşa",
-        "Latitude": 41.05668638750212,
-        "Longitude": 28.9135976930249
+        "Latitude": 41.09202900139073,
+        "Longitude": 28.915145480565105
     },
     {
         "District": "Gaziosmanpaşa",
-        "Latitude": 41.07140689715203,
-        "Longitude": 28.893412047278233
+        "Latitude": 41.08601609392971,
+        "Longitude": 28.903965797820106
     },
     {
         "District": "Gaziosmanpaşa",
-        "Latitude": 41.072741658756556,
-        "Longitude": 28.889623540342747
-    },
-    {
-        "District": "Gaziosmanpaşa",
-        "Latitude": 41.06482550670102,
-        "Longitude": 28.929022699260322
+        "Latitude": 41.06006782977788,
+        "Longitude": 28.92202274107049
     },
     {
         "District": "Ümraniye",
-        "Latitude": 41.01739034655464,
-        "Longitude": 29.14114445739046
+        "Latitude": 41.01387366246178,
+        "Longitude": 29.168389374527482
     },
     {
         "District": "Ümraniye",
-        "Latitude": 41.01803419604004,
-        "Longitude": 29.177337467452254
+        "Latitude": 41.04964927227196,
+        "Longitude": 29.117704118195064
     },
     {
         "District": "Ümraniye",
-        "Latitude": 41.02547109359667,
-        "Longitude": 29.154308814108962
+        "Latitude": 41.025605488821455,
+        "Longitude": 29.165204698548667
     },
     {
         "District": "Ümraniye",
-        "Latitude": 41.022463246366996,
-        "Longitude": 29.14061820888448
-    },
-    {
-        "District": "Ümraniye",
-        "Latitude": 41.031051410425704,
-        "Longitude": 29.13385279016077
-    },
-    {
-        "District": "Ümraniye",
-        "Latitude": 41.04927186260921,
-        "Longitude": 29.1030168837005
+        "Latitude": 41.00140842548325,
+        "Longitude": 29.18008230346988
     },
     {
         "District": "Sultangazi",
-        "Latitude": 41.120333557049534,
-        "Longitude": 28.86840829167419
+        "Latitude": 41.11439004462398,
+        "Longitude": 28.852633129677912
     },
     {
         "District": "Sultangazi",
-        "Latitude": 41.12750729774465,
-        "Longitude": 28.867179656067396
+        "Latitude": 41.119696023371645,
+        "Longitude": 28.893898538347173
     },
     {
         "District": "Sultangazi",
-        "Latitude": 41.12234691664498,
-        "Longitude": 28.877384893043935
+        "Latitude": 41.1319763189914,
+        "Longitude": 28.852736151608312
     },
     {
         "District": "Sultangazi",
-        "Latitude": 41.139234941220735,
-        "Longitude": 28.88771150142727
+        "Latitude": 41.121534050298095,
+        "Longitude": 28.84915597928076
     },
     {
         "District": "Sultangazi",
-        "Latitude": 41.09331342898619,
-        "Longitude": 28.899286668387298
-    },
-    {
-        "District": "Sultangazi",
-        "Latitude": 41.095232377227454,
-        "Longitude": 28.907755853518594
+        "Latitude": 41.1013263216173,
+        "Longitude": 28.881335306811025
     },
     {
         "District": "Kağıthane",
-        "Latitude": 41.09561158354689,
-        "Longitude": 28.973307436683942
+        "Latitude": 41.0982015322999,
+        "Longitude": 28.966206851107792
     },
     {
         "District": "Kağıthane",
-        "Latitude": 41.081697574157324,
-        "Longitude": 28.98425953693274
-    },
-    {
-        "District": "Kağıthane",
-        "Latitude": 41.091030956867996,
-        "Longitude": 28.98433555068888
-    },
-    {
-        "District": "Kağıthane",
-        "Latitude": 41.06235116162335,
-        "Longitude": 28.965144259311536
-    },
-    {
-        "District": "Kağıthane",
-        "Latitude": 41.088554874642625,
-        "Longitude": 28.98167176933101
-    },
-    {
-        "District": "Kağıthane",
-        "Latitude": 41.09891591530927,
-        "Longitude": 28.982575752583024
+        "Latitude": 41.07302825991828,
+        "Longitude": 28.977812811489443
     },
     {
         "District": "Çekmeköy",
-        "Latitude": 41.0494397753338,
-        "Longitude": 29.198732805154666
+        "Latitude": 41.02363604648219,
+        "Longitude": 29.226226010831063
     },
     {
         "District": "Çekmeköy",
-        "Latitude": 41.09640949705191,
-        "Longitude": 29.227181753612122
-    },
-    {
-        "District": "Çekmeköy",
-        "Latitude": 41.065165043193446,
-        "Longitude": 29.263164946931024
-    },
-    {
-        "District": "Çekmeköy",
-        "Latitude": 41.06160687679766,
-        "Longitude": 29.258998449347946
-    },
-    {
-        "District": "Çekmeköy",
-        "Latitude": 41.04123411958588,
-        "Longitude": 29.205659034472987
-    },
-    {
-        "District": "Çekmeköy",
-        "Latitude": 41.07263822542942,
-        "Longitude": 29.36287419200362
+        "Latitude": 41.104800028803886,
+        "Longitude": 29.27809013992619
     },
     {
         "District": "Pendik",
-        "Latitude": 40.88777152413456,
-        "Longitude": 29.282397096993982
+        "Latitude": 40.96072867337976,
+        "Longitude": 29.309823896803717
     },
     {
         "District": "Pendik",
-        "Latitude": 40.98918312298134,
-        "Longitude": 29.503632061128798
+        "Latitude": 40.96030183994519,
+        "Longitude": 29.391993933737687
     },
     {
         "District": "Pendik",
-        "Latitude": 40.877215906508575,
-        "Longitude": 29.244456095234398
-    },
-    {
-        "District": "Pendik",
-        "Latitude": 40.976297813729246,
-        "Longitude": 29.48105765167767
-    },
-    {
-        "District": "Pendik",
-        "Latitude": 41.00947012117617,
-        "Longitude": 29.399219301764006
+        "Latitude": 40.95982574407175,
+        "Longitude": 29.30359955767412
     },
     {
         "District": "Üsküdar",
-        "Latitude": 41.062348121258395,
-        "Longitude": 29.07448042357338
+        "Latitude": 41.03275944039111,
+        "Longitude": 29.03664494603286
     },
     {
         "District": "Üsküdar",
-        "Latitude": 41.0749666005683,
-        "Longitude": 29.06099469628116
-    },
-    {
-        "District": "Üsküdar",
-        "Latitude": 41.013513158371424,
-        "Longitude": 29.017319662376877
-    },
-    {
-        "District": "Üsküdar",
-        "Latitude": 41.03359541673504,
-        "Longitude": 29.068937496491998
+        "Latitude": 41.04907237673298,
+        "Longitude": 29.065697720232073
     },
     {
         "District": "Arnavutköy",
-        "Latitude": 41.21876057618041,
-        "Longitude": 28.76065043786768
+        "Latitude": 41.1919034190312,
+        "Longitude": 28.613140040476267
     },
     {
         "District": "Arnavutköy",
-        "Latitude": 41.297153754997794,
-        "Longitude": 28.728670746683502
+        "Latitude": 41.14787641578266,
+        "Longitude": 28.661655135535582
     },
     {
         "District": "Arnavutköy",
-        "Latitude": 41.269187357523364,
-        "Longitude": 28.67360438875204
-    },
-    {
-        "District": "Arnavutköy",
-        "Latitude": 41.39241645624536,
-        "Longitude": 28.527452129718583
-    },
-    {
-        "District": "Arnavutköy",
-        "Latitude": 41.21438602340984,
-        "Longitude": 28.6204211348935
+        "Latitude": 41.19238357357116,
+        "Longitude": 28.6699945614407
     },
     {
         "District": "Sarıyer",
-        "Latitude": 41.20657411240442,
-        "Longitude": 29.009090773416794
+        "Latitude": 41.1814810485238,
+        "Longitude": 28.97799843852986
     },
     {
         "District": "Sarıyer",
-        "Latitude": 41.22849176988738,
-        "Longitude": 29.021048366290476
-    },
-    {
-        "District": "Sarıyer",
-        "Latitude": 41.24632648506704,
-        "Longitude": 28.95149040733651
-    },
-    {
-        "District": "Sarıyer",
-        "Latitude": 41.21819560173077,
-        "Longitude": 29.05382846756376
+        "Latitude": 41.14657118589185,
+        "Longitude": 29.024025479447037
     },
     {
         "District": "Sancaktepe",
-        "Latitude": 41.04534108410735,
-        "Longitude": 29.299913223871716
+        "Latitude": 41.01650718597113,
+        "Longitude": 29.235631505817256
     },
     {
         "District": "Sancaktepe",
-        "Latitude": 41.00094247022719,
-        "Longitude": 29.23621648095149
+        "Latitude": 40.999576328913136,
+        "Longitude": 29.222338661513806
     },
     {
         "District": "Sancaktepe",
-        "Latitude": 41.01329856673305,
-        "Longitude": 29.211741793643796
-    },
-    {
-        "District": "Sancaktepe",
-        "Latitude": 41.011002428224245,
-        "Longitude": 29.23885772092889
+        "Latitude": 41.0331363141108,
+        "Longitude": 29.2979124964358
     },
     {
         "District": "Şişli",
-        "Latitude": 41.04889338249042,
-        "Longitude": 28.996733514610355
+        "Latitude": 41.0584553172416,
+        "Longitude": 28.97168927478344
     },
     {
         "District": "Şişli",
-        "Latitude": 41.04732195220771,
-        "Longitude": 28.992189562101185
+        "Latitude": 41.065723985289324,
+        "Longitude": 28.979495247320116
     },
     {
         "District": "Şişli",
-        "Latitude": 41.06680678897919,
-        "Longitude": 28.978081446765135
+        "Latitude": 41.07553977730595,
+        "Longitude": 28.99203694808436
     },
     {
         "District": "Beykoz",
-        "Latitude": 41.174430185687335,
-        "Longitude": 29.157075163980437
+        "Latitude": 41.08282431968361,
+        "Longitude": 29.069419243964795
     },
     {
         "District": "Beykoz",
-        "Latitude": 41.14469388626441,
-        "Longitude": 29.103538927519477
-    },
-    {
-        "District": "Beykoz",
-        "Latitude": 41.0851183896027,
-        "Longitude": 29.191938329280795
-    },
-    {
-        "District": "Beykoz",
-        "Latitude": 41.1418333700752,
-        "Longitude": 29.34413145809042
+        "Latitude": 41.13813213888839,
+        "Longitude": 29.13241082320101
     },
     {
         "District": "Kadıköy",
-        "Latitude": 40.97605293691334,
-        "Longitude": 29.051881629208662
+        "Latitude": 40.972368183692964,
+        "Longitude": 29.04300488382547
     },
     {
         "District": "Kadıköy",
-        "Latitude": 40.986366077732555,
-        "Longitude": 29.074348948295377
-    },
-    {
-        "District": "Kadıköy",
-        "Latitude": 40.965450473164296,
-        "Longitude": 29.061201455895013
+        "Latitude": 40.99683992420196,
+        "Longitude": 29.019654109560854
     },
     {
         "District": "Esenyurt",
-        "Latitude": 41.002984277737994,
-        "Longitude": 28.6927314008239
+        "Latitude": 41.028343789938994,
+        "Longitude": 28.658388524073317
     },
     {
         "District": "Esenyurt",
-        "Latitude": 41.00800514436612,
-        "Longitude": 28.695119082966738
+        "Latitude": 41.05468245513499,
+        "Longitude": 28.657757750900632
     },
     {
         "District": "Esenyurt",
-        "Latitude": 41.078118325812035,
-        "Longitude": 28.625596250929007
+        "Latitude": 41.01542878915542,
+        "Longitude": 28.6930717618413
     },
     {
         "District": "Başakşehir",
-        "Latitude": 41.112323575089114,
-        "Longitude": 28.749093461450798
+        "Latitude": 41.11521346888991,
+        "Longitude": 28.69304307749869
     },
     {
         "District": "Başakşehir",
-        "Latitude": 41.07225612025389,
-        "Longitude": 28.671722764280105
-    },
-    {
-        "District": "Başakşehir",
-        "Latitude": 41.09145614620983,
-        "Longitude": 28.77602206266451
+        "Latitude": 41.07775629473221,
+        "Longitude": 28.68934068969853
     },
     {
         "District": "Kartal",
-        "Latitude": 40.89730262229987,
-        "Longitude": 29.227332157563023
+        "Latitude": 40.910748784942314,
+        "Longitude": 29.156527712440305
     },
     {
         "District": "Kartal",
-        "Latitude": 40.88226840299362,
-        "Longitude": 29.21561753686754
+        "Latitude": 40.9121389464289,
+        "Longitude": 29.17708358552881
     },
     {
         "District": "Maltepe",
-        "Latitude": 40.967604749623845,
-        "Longitude": 29.20576554635169
+        "Latitude": 40.96102678109901,
+        "Longitude": 29.171496991286414
     },
     {
         "District": "Maltepe",
-        "Latitude": 40.957256982254584,
-        "Longitude": 29.17460856500172
+        "Latitude": 40.96686239473596,
+        "Longitude": 29.174709811792066
     },
     {
         "District": "Ataşehir",
-        "Latitude": 40.98506058462544,
-        "Longitude": 29.170760450946098
+        "Latitude": 40.98640612808324,
+        "Longitude": 29.114640020167688
     },
     {
         "District": "Ataşehir",
-        "Latitude": 40.98853445211785,
-        "Longitude": 29.12830432670132
+        "Latitude": 40.98487401459553,
+        "Longitude": 29.18931943149079
+    },
+    {
+        "District": "Ataşehir",
+        "Latitude": 40.974192261882926,
+        "Longitude": 29.122579789728984
+    },
+    {
+        "District": "Eyüpsultan",
+        "Latitude": 41.07101957962272,
+        "Longitude": 28.92153366746613
+    },
+    {
+        "District": "Eyüpsultan",
+        "Latitude": 41.195820081586426,
+        "Longitude": 28.887178188720267
     },
     {
         "District": "Bağcılar",
-        "Latitude": 41.04843706259621,
-        "Longitude": 28.846238160062853
+        "Latitude": 41.031369236570896,
+        "Longitude": 28.828922391544634
     },
     {
         "District": "Bağcılar",
-        "Latitude": 41.02942076948264,
-        "Longitude": 28.838954573158777
+        "Latitude": 41.0565851643509,
+        "Longitude": 28.824384064410356
+    },
+    {
+        "District": "Bağcılar",
+        "Latitude": 41.06221619090105,
+        "Longitude": 28.81306551998134
     },
     {
         "District": "Sultanbeyli",
-        "Latitude": 40.9606189086562,
-        "Longitude": 29.288563722526895
+        "Latitude": 40.976799061197866,
+        "Longitude": 29.255377512138164
     },
     {
         "District": "Sultanbeyli",
-        "Latitude": 40.94304821682492,
-        "Longitude": 29.2679267432634
+        "Latitude": 40.969677345893686,
+        "Longitude": 29.272203865883558
     },
     {
         "District": "Küçükçekmece",
-        "Latitude": 41.05195784620511,
-        "Longitude": 28.753345850464058
+        "Latitude": 41.0282411442903,
+        "Longitude": 28.774791343887305
     },
     {
         "District": "Küçükçekmece",
-        "Latitude": 41.04292835817713,
-        "Longitude": 28.77536361536586
+        "Latitude": 41.05766441051346,
+        "Longitude": 28.799555551054134
+    },
+    {
+        "District": "Küçükçekmece",
+        "Latitude": 40.99766925422134,
+        "Longitude": 28.78816423049987
+    },
+    {
+        "District": "Küçükçekmece",
+        "Latitude": 41.006620989885384,
+        "Longitude": 28.784197695663885
     },
     {
         "District": "Beşiktaş",
-        "Latitude": 41.06811189060749,
-        "Longitude": 29.04022032420278
+        "Latitude": 41.062796698211365,
+        "Longitude": 29.025259213060888
+    },
+    {
+        "District": "Beşiktaş",
+        "Latitude": 41.09797120778778,
+        "Longitude": 29.027189242057084
+    },
+    {
+        "District": "Beşiktaş",
+        "Latitude": 41.04331632147583,
+        "Longitude": 29.008032507673718
     },
     {
         "District": "Esenler",
-        "Latitude": 41.076988660332354,
-        "Longitude": 28.84570482569813
+        "Latitude": 41.04310821076814,
+        "Longitude": 28.869743352127017
+    },
+    {
+        "District": "Esenler",
+        "Latitude": 41.05129418934841,
+        "Longitude": 28.863786208085173
+    },
+    {
+        "District": "Esenler",
+        "Latitude": 41.079412113871996,
+        "Longitude": 28.848007024486257
     },
     {
         "District": "Avcılar",
-        "Latitude": 41.0329166294374,
-        "Longitude": 28.736549028019116
+        "Latitude": 41.0215157986012,
+        "Longitude": 28.71751216510619
+    },
+    {
+        "District": "Avcılar",
+        "Latitude": 41.06867490812713,
+        "Longitude": 28.717548619063063
+    },
+    {
+        "District": "Avcılar",
+        "Latitude": 40.991603123957745,
+        "Longitude": 28.747373680509142
+    },
+    {
+        "District": "Avcılar",
+        "Latitude": 40.99087381882248,
+        "Longitude": 28.73373241691718
     },
     {
         "District": "Bahçelievler",
-        "Latitude": 41.01737410672164,
-        "Longitude": 28.858916227629145
+        "Latitude": 40.99640719566894,
+        "Longitude": 28.845252906180708
+    },
+    {
+        "District": "Bahçelievler",
+        "Latitude": 41.00619611130418,
+        "Longitude": 28.859123538566323
+    },
+    {
+        "District": "Bahçelievler",
+        "Latitude": 40.996416166178015,
+        "Longitude": 28.85697132182281
+    },
+    {
+        "District": "Bahçelievler",
+        "Latitude": 41.00487327054509,
+        "Longitude": 28.849011631780836
     },
     {
         "District": "Beyoğlu",
-        "Latitude": 41.03256947058734,
-        "Longitude": 28.96696206497455
+        "Latitude": 41.0587380514473,
+        "Longitude": 28.951983405138666
+    },
+    {
+        "District": "Beyoğlu",
+        "Latitude": 41.03616737177936,
+        "Longitude": 28.971775832355767
+    },
+    {
+        "District": "Beyoğlu",
+        "Latitude": 41.043689293317954,
+        "Longitude": 28.950515403561564
     },
     {
         "District": "Beylikdüzü",
-        "Latitude": 40.994660644025664,
-        "Longitude": 28.664199409620057
+        "Latitude": 40.980431537237536,
+        "Longitude": 28.679739583005208
+    },
+    {
+        "District": "Beylikdüzü",
+        "Latitude": 40.98166417397009,
+        "Longitude": 28.674923239521174
     },
     {
         "District": "Silivri",
-        "Latitude": 41.29153873714064,
-        "Longitude": 28.141403418246263
+        "Latitude": 41.04797809294275,
+        "Longitude": 28.050938906275583
     },
     {
         "District": "Silivri",
-        "Latitude": 41.26740626641838,
-        "Longitude": 28.158588686897172
-    },
-    {
-        "District": "Silivri",
-        "Latitude": 41.07668824748386,
-        "Longitude": 28.188347137310497
+        "Latitude": 41.18388252632073,
+        "Longitude": 28.292297070048825
     },
     {
         "District": "Tuzla",
-        "Latitude": 40.94896726663748,
-        "Longitude": 29.433026229416885
+        "Latitude": 40.95696502684741,
+        "Longitude": 29.409171494993643
+    },
+    {
+        "District": "Tuzla",
+        "Latitude": 40.876823202009184,
+        "Longitude": 29.3551188145985
     },
     {
         "District": "Şile",
-        "Latitude": 41.13167134304881,
-        "Longitude": 29.658217820129885
+        "Latitude": 41.111429947119426,
+        "Longitude": 29.4094311253942
     },
     {
         "District": "Şile",
-        "Latitude": 41.01034537600853,
-        "Longitude": 29.449324296063992
+        "Latitude": 41.04535869312771,
+        "Longitude": 29.772942935015486
     },
     {
         "District": "Çatalca",
-        "Latitude": 41.51628088793987,
-        "Longitude": 28.116150265985326
+        "Latitude": 41.386231148727,
+        "Longitude": 28.137626914964155
     },
     {
         "District": "Çatalca",
-        "Latitude": 41.28559426627162,
-        "Longitude": 28.4453766206204
+        "Latitude": 41.09478940990064,
+        "Longitude": 28.49209762961295
     },
     {
         "District": "Çatalca",
-        "Latitude": 41.2104514982192,
-        "Longitude": 28.420302315034657
+        "Latitude": 41.34915408000565,
+        "Longitude": 28.39703486708729
+    },
+    {
+        "District": "Fatih",
+        "Latitude": 41.02251773788451,
+        "Longitude": 28.938295253989775
+    },
+    {
+        "District": "Fatih",
+        "Latitude": 41.03074466370957,
+        "Longitude": 28.947939416311776
     },
     {
         "District": "Büyükçekmece",
-        "Latitude": 41.03816542292844,
-        "Longitude": 28.61718696507703
+        "Latitude": 41.057264837446596,
+        "Longitude": 28.573206500039714
     },
     {
-        "District": "Eyüpsultan",
-        "Latitude": 41.24118840941661,
-        "Longitude": 28.92889374601386
-    },
-    {
-        "District": "Eyüpsultan",
-        "Latitude": 41.26596546444691,
-        "Longitude": 28.917159683923852
-    },
-    {
-        "District": "Fatih",
-        "Latitude": 41.007461173993455,
-        "Longitude": 28.97719892799054
-    },
-    {
-        "District": "Fatih",
-        "Latitude": 41.01832413714204,
-        "Longitude": 28.940746568994978
+        "District": "Büyükçekmece",
+        "Latitude": 41.015391687207206,
+        "Longitude": 28.544703853810976
     },
     {
         "District": "Bayrampaşa",
-        "Latitude": 41.06261202278832,
-        "Longitude": 28.891376569133854
+        "Latitude": 41.07342315418434,
+        "Longitude": 28.881921801341957
     },
     {
         "District": "Bayrampaşa",
-        "Latitude": 41.04637413474148,
-        "Longitude": 28.89038365066415
+        "Latitude": 41.041931868638,
+        "Longitude": 28.890753688723656
+    },
+    {
+        "District": "Bayrampaşa",
+        "Latitude": 41.06011263870493,
+        "Longitude": 28.88761993210471
     },
     {
         "District": "Güngören",
-        "Latitude": 41.02076193951564,
-        "Longitude": 28.8778518196511
-    },
-    {
-        "District": "Güngören",
-        "Latitude": 41.02717097947313,
-        "Longitude": 28.860620573648625
+        "Latitude": 41.02085438371895,
+        "Longitude": 28.863420216168105
     },
     {
         "District": "Zeytinburnu",
-        "Latitude": 40.992870974199306,
-        "Longitude": 28.90367510051393
+        "Latitude": 40.987901766916686,
+        "Longitude": 28.902358943538182
     },
     {
         "District": "Zeytinburnu",
-        "Latitude": 41.0067810938685,
-        "Longitude": 28.905454913764995
+        "Latitude": 41.001455738274025,
+        "Longitude": 28.91106072510002
     },
     {
         "District": "Bakırköy",
-        "Latitude": 40.99929568697821,
-        "Longitude": 28.81042713389854
+        "Latitude": 40.95926229463167,
+        "Longitude": 28.832526490266595
     },
     {
         "District": "Bakırköy",
-        "Latitude": 40.97786664368968,
-        "Longitude": 28.87339729405853
+        "Latitude": 40.98559337226012,
+        "Longitude": 28.890489175835683
     },
     {
         "District": "Unknown",
