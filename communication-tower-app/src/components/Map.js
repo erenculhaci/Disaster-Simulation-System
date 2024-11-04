@@ -69,7 +69,7 @@ const districtDestructionRates = {
     Güngören: 30.78614623,
     Zeytinburnu: 33.3375,
     Bakırköy: 45.87447699,
-    Unknown: 30
+    Unknown: 1
 };
 
 const MapComponent = () => { 
